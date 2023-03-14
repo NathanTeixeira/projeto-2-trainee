@@ -32,6 +32,12 @@ a{
     text-decoration: none;
 }
 
+.a-color:hover{
+    color: white;
+    transition: 0.3s all;
+    range: 100%;
+}
+
 a:hover{
     color: #0B8705;
     transition: 0.3s all;
@@ -68,6 +74,13 @@ img{
     display: block;
     margin-left: 100px;
     margin-right: auto;
+}
+
+.languages-logo{
+    width: 380px;
+    display: block;
+    margin-right: 200px;
+    margin-left: 3px;
 }
 
 #contato-img{
@@ -110,7 +123,7 @@ img{
 }
 
 .box:nth-child(3):hover{
-    background: #075e54;
+    background: #25d366;
     box-shadow: 0 0 50px #1876f285;
 }
 
