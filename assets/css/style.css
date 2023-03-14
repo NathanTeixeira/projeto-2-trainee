@@ -2,7 +2,7 @@
 
 
 body{
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(29, 28, 28);
     color: white;
     font-family: poppinsregular;
     max-width: 1200px;
@@ -33,14 +33,8 @@ a{
 }
 
 a:hover{
-    color: rgb(132, 14, 201);
+    color: #0B8705;
     transition: 0.3s all;
-}
-
-.btn-efeito{
-    border: 2px solid rgb(132, 14, 201);
-    padding: 10px;
-    border-radius: 20px;
 }
 
 h1{
@@ -60,7 +54,7 @@ h2{
 }
 
 span{
-    color: rgb(132, 14, 201);
+    color: #0B8705;
 }
 
 p{
@@ -70,15 +64,97 @@ p{
 }
 
 img{
-    width: 580px;
-
+    width: 380px;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
 }
 
-.logo-btn{
-    display: inline-block;
-    margin: 10px;
+#contato-img{
+    width: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.logo{
-    width: 35px;
+.box{
+    width: 65px;
+    height: 68px;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.box:hover{
+    width: 170px;
+    height: 50px;
+    background: #c32aa3;
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px #b315917c;
+}
+
+.box:nth-child(1):hover{
+    background: #171515;
+    box-shadow: 0 0 50px #1876f285;
+}
+
+.box:nth-child(2):hover{
+    background: #1da1f2;
+    box-shadow: 0 0 50px #1da0f280;
+}
+
+.box:nth-child(3):hover{
+    background: #075e54;
+    box-shadow: 0 0 50px #1876f285;
+}
+
+.navbar p{
+    transform: translate(70px);
+}
+
+#nav1{
+    display: flex;
+    margin-left: 200px;
+}
+
+#nav2{
+    display: flex;
+    margin-left: 460px;
+}
+
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .4s ease;
+}
+
+.box:hover .icon{
+    background: #fff;
+    color: #020202;
+    box-shadow: 0 0 20px rgba(0,0,0,0.26);
+}
+
+.github{
+    background-color: #171515 ;
+}
+
+.linkedin{
+    background-color: #0072b1;
+}
+
+.whatsapp{
+    background-color: #25d366;
 }
