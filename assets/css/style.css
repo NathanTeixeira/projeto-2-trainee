@@ -78,7 +78,7 @@ p {
 }
 
 img {
-    width: 380px;
+    width: 480px;
     display: block;
     margin-left: 100px;
     margin-right: auto;
@@ -87,8 +87,8 @@ img {
 .languages-logo {
     width: 380px;
     display: block;
-    margin-right: 200px;
-    margin-left: 3px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 15px;
 }
 
@@ -147,7 +147,8 @@ img {
 
 #nav1 {
     display: flex;
-    margin-left: 200px;
+    margin-left: 250px;
+    margin-right: auto;
 }
 
 #nav2 {

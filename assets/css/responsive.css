@@ -21,7 +21,7 @@
     h2,
     h3 {
         justify-content: center;
-        margin-left: 50px;
+        margin-left: 45px;
     }
 
     p {
@@ -36,19 +36,19 @@
     }
 
     #nav1 {
-        margin-left: 80px;
+        margin-left: 110px;
         margin-top: 50px;
     }
 
     #nav2 {
-        margin-left: 25px;
+        margin-left: 55px;
         margin-top: 50px;
     }
 
     .box .icon {
         position: absolute;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,13 +59,13 @@
     }
 
     .box {
-        display: inline-block;
-        width: 85px;
-        height: 85px;
+        display: inline;
+        width: 65px;
+        height: 65px;
     }
 
     .icon {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     #contato-img {
@@ -83,12 +83,17 @@
         left: 0;
         background: rgb(0, 0, 0);
         text-align: center;
-        width: 100%;
+        justify-content: center;
+        width: 100vw;
         height: 0;
         z-index: 1;
         visibility: hidden;
         overflow-y: hidden;
         transition: 0.5s;
+    }
+
+    li{
+        margin-right: 100px;
     }
 
     .menu a {
@@ -128,7 +133,7 @@
     }
 
     .nav.active .menu {
-        height: calc(100vh - 4.6875rem);
+        height: calc(100vh - 35rem);
         visibility: visible;
         overflow-y: auto;
     }
