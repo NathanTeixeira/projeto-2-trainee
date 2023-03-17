@@ -1,82 +1,90 @@
 @charset "UTF-8";
 
-
-body{
-    background-color: rgb(29, 28, 28);
+body {
+    background-color: rgb(19, 18, 18);
     color: white;
     font-family: poppinsregular;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
+    background: #000000;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 3rem;
+    padding: 1rem;
 }
 
-#titulo{
+aside{
+    margin-left: 100px;
+}
+
+#titulo {
     flex-direction: column;
     line-height: 10px;
+    font-size: 13px;
 }
 
-li{
+li {
     display: inline-block;
     margin: 20px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-.a-color:hover{
+.a-color:hover {
     color: white;
     transition: 0.3s all;
     range: 100%;
 }
 
-a:hover{
+a:hover {
     color: #0B8705;
     transition: 0.3s all;
 }
 
-h1{
+h1 {
     font-weight: 200;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
 
-h2{
-    font-size: 56px;
-    line-height: 10px;
+h2 {
+    font-size: 46px;
+    line-height: 40px;
     font-family: Poppinsmedium;
+    max-width: 450px;
 }
 
-span{
+#h2-color {
     color: #0B8705;
 }
 
-p{
+p {
     line-height: 20px;
     max-width: 500px;
     font-family: poppinslight;
 }
 
-img{
+img {
     width: 380px;
     display: block;
     margin-left: 100px;
     margin-right: auto;
 }
 
-.languages-logo{
+.languages-logo {
     width: 380px;
     display: block;
     margin-right: 200px;
@@ -84,19 +92,19 @@ img{
     margin-top: 15px;
 }
 
-.logo-img{
+.logo-img {
     width: 250px;
     margin-top: 25px;
 }
 
-#contato-img{
+#contato-img {
     width: 380px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.box{
+.box {
     width: 65px;
     height: 68px;
     display: inline-flex;
@@ -109,7 +117,7 @@ img{
     transition: all .4s ease;
 }
 
-.box:hover{
+.box:hover {
     width: 170px;
     height: 50px;
     background: #c32aa3;
@@ -118,36 +126,37 @@ img{
     box-shadow: 0 0 50px #b315917c;
 }
 
-.box:nth-child(1):hover{
+.box:nth-child(1):hover {
     background: #171515;
     box-shadow: 0 0 50px #1876f285;
 }
 
-.box:nth-child(2):hover{
+.box:nth-child(2):hover {
     background: #1da1f2;
     box-shadow: 0 0 50px #1da0f280;
 }
 
-.box:nth-child(3):hover{
+.box:nth-child(3):hover {
     background: #25d366;
     box-shadow: 0 0 50px #1876f285;
 }
 
-.navbar p{
+.navbar p {
     transform: translate(70px);
 }
 
-#nav1{
+#nav1 {
     display: flex;
     margin-left: 200px;
 }
 
-#nav2{
+#nav2 {
     display: flex;
-    margin-left: 460px;
+    margin-left: 550px;
+    margin-right: auto;
 }
 
-.box .icon{
+.box .icon {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -160,28 +169,28 @@ img{
     transition: all .4s ease;
 }
 
-.icon{
+.icon {
     font-size: 25px;
 }
 
-.box:hover .icon{
+.box:hover .icon {
     background: #fff;
     color: #020202;
-    box-shadow: 0 0 20px rgba(0,0,0,0.26);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
 }
 
-.github{
-    background-color: #171515 ;
+.github {
+    background-color: #000000;
 }
 
-.linkedin{
+.linkedin {
     background-color: #0072b1;
 }
 
-.whatsapp{
+.whatsapp {
     background-color: #25d366;
 }
 
-.menu-lines, .menu-fake-trigger{
+.btn-menu {
     display: none;
 }

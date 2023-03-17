@@ -1,43 +1,51 @@
-@media screen and (max-width: 780px) {   
-    main{
+@media screen and (max-width: 780px) {
+
+    main {
         flex-direction: column;
     }
 
-    h2{
-        font-size: 30px;
+    aside {
+        margin-left: auto;
     }
 
-    h3{
+    h2 {
+        font-size: 30px;
+        line-height: 30px;
+        max-width: 300px;
+    }
+
+    h3 {
         font-size: 23px;
     }
 
-    h2, h3{       
+    h2,
+    h3 {
         justify-content: center;
         margin-left: 50px;
     }
 
-    p{
+    p {
         font-size: 28px;
         margin-left: 30px;
         max-width: 400px;
         line-height: 35px;
     }
 
-    img{
+    img {
         display: none;
     }
 
-    #nav1{
+    #nav1 {
         margin-left: 80px;
         margin-top: 50px;
     }
 
-    #nav2{
-        margin-left: 15px;
+    #nav2 {
+        margin-left: 25px;
         margin-top: 50px;
     }
 
-    .box .icon{
+    .box .icon {
         position: absolute;
         width: 80px;
         height: 80px;
@@ -50,89 +58,91 @@
         margin-top: auto;
     }
 
-    .box{
+    .box {
         display: inline-block;
-        width: 90px;
-        height: 90px;
+        width: 85px;
+        height: 85px;
     }
 
-    .icon{
+    .icon {
         font-size: 30px;
     }
 
-    .menu .menu-lines{
-        position: absolute;
-        z-index: 999;
-        width: 35px;
-        height: 35px;
-    }
-
-    .menu .menu-lines, .check{
+    #contato-img {
+        width: 280px;
         display: block;
-        width: 35px;
-        height: 5px;
-        margin-bottom: 10px;
-        background-color: gold;
-        border-radius: 3px;
-        transition: all ease .2s;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .menu-fake-trigger{
-        position: absolute;
-        z-index: 1000;
-        width: 35px;
-        height: 35px;
+    .menu {
         display: flex;
-        opacity: 0;
-    }
-
-    .menu .menu-fake-trigger:checked ~ .menu-lines .check:nth-child(1){
-        transform-origin: 0% 0%;
-        transform: rotate(45deg) scaleX(1.25);
-    }
-
-    .menu .menu-fake-trigger:checked ~ .menu-lines .check:nth-child(2){
-        opacity: 0;
-    }
-
-    .menu .menu-fake-trigger:checked ~ .menu-lines .check:nth-child(3){
-        transform-origin: 0% 100%;
-        transform: rotate(-45deg) scaleX(1.25);
-    }
-
-    .menu ul{
         position: absolute;
-        z-index: 998;
-        right: 0;
-        top: 0;
-        width: 300px;
-        background-color: rgb(56, 54, 54);
-        height: calc(100vh - 100px);
-        padding-top: 100px;
-        margin-right: -500px;
-        transition: all ease .4s;
+        flex-direction: column;
+        top: 4rem;
+        left: 0;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
     }
 
-    .menu{
-        margin-right: 50px;
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgb(255, 255, 255);
+        border-radius: 0;
     }
 
-    #titulo{
-        margin-top: 40px;
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
     }
 
-    .menu .menu-fake-trigger:checked ~ ul{
-        margin-right: 0;
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
     }
 
-    .menu ul li{
-        padding: 10px 30px;
-        margin: 5px;
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
     }
 
-    .menu li a{
-        font-size: 30px;
-        margin-left: 40px;
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
     }
 
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
 }
