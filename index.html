@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css" <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -25,13 +26,26 @@
         </div>
 
         <!--############# lista do cabeçario ###############-->
-        <ul>
-            <li><a href="index.html" target="_self">Inicio</a> </li>
-            <li><a href="sobre.html" target="_self">Sobre</a> </li>
-            <li><a href="contato.html" target="_self">Contato</a> </li>
-            <li><a href="#" target="_self">Projetos</a> </li>
+        <nav class="menu">
 
-        </ul>
+            <input type="checkbox" class="menu-fake-trigger">
+            
+            <div class="menu-lines">
+                <span class="check"></span>
+                <span class="check"></span>
+                <span class="check"></span>
+            </div>
+
+            <ul>
+                <li><a href="index.html" target="_self">Inicio</a> </li>
+                <li><a href="sobre.html" target="_self">Sobre</a> </li>
+                <li><a href="contato.html" target="_self">Contato</a> </li>
+                <li><a href="#" target="_self">Projetos</a> </li>
+
+            </ul>
+
+        </nav>
+
     </header>
 
     <!--############# Main - conteudo da pagina ###############-->
@@ -54,10 +68,10 @@
 
                 <div class="box">
                     <a class="a-color" href="https://github.com/NathanTeixeira" target="_blank">
-                    <div class="icon github">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </div>
-                    <p>GitHub</p>
+                        <div class="icon github">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </div>
+                        <p>GitHub</p>
                     </a>
                 </div>
 

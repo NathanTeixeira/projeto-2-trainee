@@ -81,6 +81,12 @@ img{
     display: block;
     margin-right: 200px;
     margin-left: 3px;
+    margin-top: 15px;
+}
+
+.logo-img{
+    width: 250px;
+    margin-top: 25px;
 }
 
 #contato-img{
@@ -154,6 +160,10 @@ img{
     transition: all .4s ease;
 }
 
+.icon{
+    font-size: 25px;
+}
+
 .box:hover .icon{
     background: #fff;
     color: #020202;
@@ -170,4 +180,8 @@ img{
 
 .whatsapp{
     background-color: #25d366;
+}
+
+.menu-lines, .menu-fake-trigger{
+    display: none;
 }

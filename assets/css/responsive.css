@@ -1,22 +1,138 @@
-@media screen and (max-width: 760px) {
-    header{
-        flex-direction: column;
-    }   
-
+@media screen and (max-width: 780px) {   
     main{
         flex-direction: column;
     }
 
     h2{
         font-size: 30px;
+    }
+
+    h3{
+        font-size: 23px;
+    }
+
+    h2, h3{       
         justify-content: center;
+        margin-left: 50px;
+    }
+
+    p{
+        font-size: 28px;
+        margin-left: 30px;
+        max-width: 400px;
+        line-height: 35px;
     }
 
     img{
         display: none;
     }
 
-    ul{
-        text-align: center;
+    #nav1{
+        margin-left: 80px;
+        margin-top: 50px;
     }
+
+    #nav2{
+        margin-left: 15px;
+        margin-top: 50px;
+    }
+
+    .box .icon{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: auto;
+    }
+
+    .box{
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+    }
+
+    .icon{
+        font-size: 30px;
+    }
+
+    .menu .menu-lines{
+        position: absolute;
+        z-index: 999;
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu .menu-lines, .check{
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: gold;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    .menu-fake-trigger{
+        position: absolute;
+        z-index: 1000;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        opacity: 0;
+    }
+
+    .menu .menu-fake-trigger:checked ~ .menu-lines .check:nth-child(1){
+        transform-origin: 0% 0%;
+        transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .menu .menu-fake-trigger:checked ~ .menu-lines .check:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu .menu-fake-trigger:checked ~ .menu-lines .check:nth-child(3){
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) scaleX(1.25);
+    }
+
+    .menu ul{
+        position: absolute;
+        z-index: 998;
+        right: 0;
+        top: 0;
+        width: 300px;
+        background-color: rgb(56, 54, 54);
+        height: calc(100vh - 100px);
+        padding-top: 100px;
+        margin-right: -500px;
+        transition: all ease .4s;
+    }
+
+    .menu{
+        margin-right: 50px;
+    }
+
+    #titulo{
+        margin-top: 40px;
+    }
+
+    .menu .menu-fake-trigger:checked ~ ul{
+        margin-right: 0;
+    }
+
+    .menu ul li{
+        padding: 10px 30px;
+        margin: 5px;
+    }
+
+    .menu li a{
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
 }
