@@ -56,6 +56,7 @@
         border-radius: 50%;
         margin-right: 10px;
         margin-top: auto;
+        transition: none;
     }
 
     .box {
@@ -66,6 +67,41 @@
 
     .icon {
         font-size: 28px;
+    }
+
+    .a-color:hover {
+        color: rgb(2, 2, 2);
+        transition: none;
+        range: 100%;
+    }
+
+    .box:hover {
+        width: 65px;
+        height: 65px;
+        background: #c32aa3;
+        border-radius: 35px;
+        color: #020202;
+        box-shadow: none;
+    }
+
+    .box:nth-child(1):hover {
+        background: #171515;
+        box-shadow: none;
+    }
+    
+    .box:nth-child(2):hover {
+        background: #1da1f2;
+        box-shadow: none;
+    }
+    
+    .box:nth-child(3):hover {
+        background: #25d366;
+        box-shadow: none;
+    }
+
+    .box:hover .icon {
+        color: #020202;   
+        box-shadow: none; 
     }
 
     #contato-img {
@@ -133,7 +169,7 @@
     }
 
     .nav.active .menu {
-        height: calc(100vh - 35rem);
+        height: calc(100vh - 30rem);
         visibility: visible;
         overflow-y: auto;
     }
