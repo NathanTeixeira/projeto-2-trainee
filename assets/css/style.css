@@ -19,14 +19,22 @@ header {
     padding: 1rem;
 }
 
-aside{
-    margin-left: 100px;
+#aside-home{
+    margin-left: 50px;
+    margin-top: 55px;
+}
+
+.texto-sobre{
+    margin-left: auto;
+    margin-right: 170px;
+    margin-top: 50px;
 }
 
 #titulo {
     flex-direction: column;
     line-height: 10px;
-    font-size: 13px;
+    font-size: 14px;
+    font-family: poppinsregular;
 }
 
 li {
@@ -62,9 +70,30 @@ main {
 
 h2 {
     font-size: 46px;
-    line-height: 40px;
+    line-height: 30px;
     font-family: Poppinsmedium;
-    max-width: 450px;
+    max-width: 500px;
+}
+
+#h2-lang{
+    font-size: 38px;
+    font-family: Poppinsregular;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 60px;
+    line-height: 40px;
+    color: #0B8705;
+}
+
+#h2-sobre{
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 35px;
+    font-family: Poppinsregular;
+    max-width: 490px;
 }
 
 #h2-color {
@@ -72,9 +101,10 @@ h2 {
 }
 
 p {
-    line-height: 20px;
+    line-height: 27px;
     max-width: 500px;
     font-family: poppinslight;
+    font-size: 20px;
 }
 
 img {
@@ -93,8 +123,8 @@ img {
 }
 
 .logo-img {
-    width: 250px;
-    margin-top: 25px;
+    width: 200px;
+    margin-top: 70px;
 }
 
 #contato-img {
